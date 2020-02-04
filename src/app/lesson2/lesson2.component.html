@@ -1,0 +1,8 @@
+<input type="number" [(ngModel)]="score">
+<p *ngIf="score >= 60">好棒</p>
+<p *ngIf="score < 60">好笨</p>
+
+<button (click)= "callService()">service call</button>
+
+
+
