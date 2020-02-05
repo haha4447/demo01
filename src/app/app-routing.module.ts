@@ -7,17 +7,20 @@ import { Lesson4Component } from './lesson4/lesson4.component';
 import { Lesson5Component } from './lesson5/lesson5.component';
 import { Lesson6Component } from './lesson6/lesson6.component';
 import { Lesson8Component } from './lesson8/lesson8.component';
+import { Lesson9Component } from './lesson9/lesson9.component';
 
 const routes: Routes = [
-  {path:'', redirectTo:'lon1', pathMatch:'full'},
-  {path:'lon1', component: Lesson1Component},
-  {path:'lon2', component: Lesson2Component},
-  {path:'lon3', component: Lesson3Component},
-  {path:'lon4', component: Lesson4Component},
-  {path:'lon5', component: Lesson5Component},
-  {path:'lon6', component: Lesson6Component},
-  {path:'lon8', component: Lesson8Component},
-  {path:'**', component: Lesson1Component},
+  { path: '', redirectTo: 'lon1', pathMatch: 'full' },
+  { path: 'lon1', component: Lesson1Component },
+  { path: 'lon2', component: Lesson2Component },
+  { path: 'lon3', component: Lesson3Component },
+  { path: 'lon4', component: Lesson4Component },
+  { path: 'lon5', component: Lesson5Component },
+  { path: 'lon6', component: Lesson6Component },
+  { path: 'lon8', component: Lesson8Component },
+  { path: 'lon9/:id', component: Lesson9Component },
+  { path: '**', component: Lesson1Component },
+
 ];
 
 @NgModule({

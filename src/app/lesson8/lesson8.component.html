@@ -1,3 +1,39 @@
 <p>lesson8 works!</p>
 
-{{books |json}}
+<!-- <pre>{{books |json}}</pre>
+
+
+<div *ngFor="let book of books">
+    <p>{{book.id}}</p>
+    <p>{{book.name}}</p>
+    <p>{{book.price}}</p>
+</div>
+
+<pre>{{book |json}}</pre> -->
+
+<input type="text" [(ngModel)]="postBook.name">
+<br>
+<input type="number" [(ngModel)]="postBook.price">
+<br>
+<input type="text" [(ngModel)]="postBook.description">
+<br>
+<input type="checkbox" [(ngModel)]="postBook.is_online">
+<br>
+<button (click)="submitBook()">送出</button>
+
+<!-- {{postBook |json}} -->
+
+<hr>
+<br>
+<br>
+<ng-container *ngIf="putBook">
+  <input type="text" [(ngModel)]="putBook.name">
+  <br>
+  <input type="number" [(ngModel)]="putBook.price">
+  <br>
+  <input type="text" [(ngModel)]="putBook.description">
+  <br>
+  <input type="checkbox" [(ngModel)]="putBook.is_online">
+  <br>
+  <button (click)="submitBook()">送出</button>
+</ng-container>

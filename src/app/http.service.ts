@@ -5,7 +5,7 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root'
 })
 export class HttpService {
-  serverIp = 'http://120.97.26.43:8000/';
+  serverIp = 'http://120.97.26.45:8000/';
 
   constructor(
     public http: HttpClient
